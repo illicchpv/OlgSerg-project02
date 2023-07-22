@@ -1,0 +1,28 @@
+.sectionContactsMap{
+  margin-top: -167px;
+  background-color: chocolate;
+  min-height: 500px;
+}
+.contentSecContactMap{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 var(--contentInnerPadX);
+}
+  .contentSecContact{
+    min-height: 300px;
+    background-color: rgba(252, 29, 148, .7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contentSecMap{
+    min-height: 300px;
+    width: 100%;
+    width: calc(100% + 50vw - 100%);
+    width: calc(100% + (min(100vw, var(--bodyBlockW))/2 - 100%));
+
+    background-color: goldenrod;
+  }
+  .imgMap{
+    width: 100%;
+  }

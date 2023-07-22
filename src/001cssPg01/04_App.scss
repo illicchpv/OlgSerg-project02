@@ -1,0 +1,19 @@
+.sectionApp{
+  z-index: 20;
+  margin-top: -110px;
+  background-image: url(../imgBg/05App.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.contentSecApp{
+  min-height: 640px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 var(--contentInnerPadX);
+
+  background-color: rgba(218, 181, 136, .3);
+}
+
