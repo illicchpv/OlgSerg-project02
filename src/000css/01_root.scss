@@ -1,6 +1,6 @@
 @font-face {
-  /* sans-serif */
-  font-family: 'msaR400';
+  /* sans-serif  Regular */
+  font-family: 'msaR';
   font-display: swap;
   font-style: normal;
   font-weight: 400;
@@ -8,25 +8,42 @@
 }
 @font-face {
   /* sans-serif SemiBold  */
-  font-family: 'msaR600';
+  font-family: 'msaR';
   font-display: swap;
   font-style: normal;
   font-weight: 600;
   src: url('../fonts/MontserratAlternates-SemiBold.ttf');
 }
+@font-face {
+  /* sans-serif  Bold */
+  font-family: 'msaR';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/MontserratAlternates-Bold.ttf');
+}
+
+@font-face {
+  /* sans-serif  Italic */
+  font-family: 'msaRItalic';
+  font-display: swap;
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/MontserratAlternates-Italic.ttf');
+}
+
 
 :root {
   --transTime: 0.3s;
   --txtColor: #000;
   --bgColor1: #ECF7FF;
-  /* --bgColor1: red; */
   --bgColor2: #BDE2FE;
   --bgColor3: #9ED5FE;
   --bgColor9: #026AB6;
   --bgMap: #FCF4DF;
   --bodyBlockW: 1920px;
   --containerW: 1600px;
-  --contentInnerPadX: 20px;
+  --contentInnerPadX: 4px;
 }
 /* var(--transTime) var(--bgColor1) 
 var(--bgColor2) var(--bgColor3) 
@@ -47,7 +64,7 @@ html {
 }    
 
 body {
-  font-family: msaR600, sans-serif;
+  font-family: msaR, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.1;

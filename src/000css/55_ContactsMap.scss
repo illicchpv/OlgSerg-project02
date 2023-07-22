@@ -1,7 +1,8 @@
 .sectionContactsMap{
   margin-top: -167px;
-  background-color: chocolate;
   min-height: 500px;
+
+  // background-color: chocolate;
 }
 .contentSecContactMap{
   display: grid;
@@ -10,10 +11,11 @@
 }
   .contentSecContact{
     min-height: 300px;
-    background-color: rgba(252, 29, 148, .7);
     display: flex;
     justify-content: center;
     align-items: center;
+
+    // background-color: rgba(252, 29, 148, .7);
   }
   .contentSecMap{
     min-height: 300px;
@@ -21,7 +23,7 @@
     width: calc(100% + 50vw - 100%);
     width: calc(100% + (min(100vw, var(--bodyBlockW))/2 - 100%));
 
-    background-color: goldenrod;
+    // background-color: goldenrod;
   }
   .imgMap{
     width: 100%;
