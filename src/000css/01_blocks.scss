@@ -1,0 +1,108 @@
+// blueLine100
+.blueLine100 {
+  width: 100vw;
+  height: 1px;
+  background-color: #00A6E8;
+  position: absolute;
+  bottom: 10px;
+  left: calc((100vw - 100%) / 2);
+}
+// /blueLine100
+
+/* .socials */
+.socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.socials__item a {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: transparent;
+  width: 43px;
+  height: 43px;
+  /* transition: all var(--transTime); */
+}
+
+.socials__item_wk {
+  background-image: url(../img/social_wk.png);
+  transition: background-image var(--transTime);
+}
+.socials__item_wk:hover {
+  background-image: url(../img/social_wk1.png);
+}
+
+.socials__item_ok {
+  background-image: url(../img/social_ok.png);
+  transition: background-image var(--transTime);
+}
+.socials__item_ok:hover {
+  background-image: url(../img/social_ok1.png);
+}
+
+.socials__item_wa {
+  transition: background-image var(--transTime);
+  background-image: url(../img/social_wa.png);
+}
+.socials__item_wa:hover {
+  background-image: url(../img/social_wa1.png);
+}
+
+.socials__item_tg {
+  background-image: url(../img/social_tg.png);
+  transition: background-image var(--transTime);
+}
+.socials__item_tg:hover {
+  background-image: url(../img/social_tg1.png);
+}
+/* /.socials */
+
+/* .bluLinkButton */
+.bluLinkButton {
+  position: relative;
+}
+.bluLinkButton a {
+  display: inline-flex;
+  padding: 20px 30px 20px 30px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+
+  border-radius: 35px;
+  background: linear-gradient(180deg, #00A0E3 0%, #004DC0 100%);
+  box-shadow: 0px 10px 20px 0px rgba(0, 160, 227, 0.30);
+
+  color: #FFF;
+  font-family: msaR;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  /* cursor: pointer; */
+  text-decoration: none;
+  white-space: nowrap;
+  /* background-color: red; */
+
+  transition: opacity var(--transTime);
+}
+.bluLinkButton .lvl2 {
+  z-index: 2;
+  position: absolute;
+  background: #004DC0;
+  opacity: 0;
+}
+.bluLinkButton:hover .lvl2 {
+  opacity: 1;
+}
+
+.bluLinkButton.disabled a {
+  background: linear-gradient(180deg, #a6b7bf 0%, #424549 100%);
+  box-shadow: 0px 10px 20px 0px rgba(0, 160, 227, 0.30);
+
+  color: #cacaca;
+  cursor: not-allowed;
+}
+/* /.bluLinkButton */

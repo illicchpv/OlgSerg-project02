@@ -1,92 +1,127 @@
 <!doctype html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="icon" type="image/x-icon" href="./img/favicon/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="./img/favicon/favicon.ico">
 
-    <!-- <link rel="preload" href="fonts/AnyConv.com__MontserratAlternates-Regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/AnyConv.com__MontserratAlternates-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/AnyConv.com__MontserratAlternates-Bold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/AnyConv.com__MontserratAlternates-Italic.woff2" as="font" type="font/woff2" crossorigin> -->
-  
-    <title>Космодент | услуги/цены</title>
+  <!-- <link rel="preload" href="fonts/AnyConv.com__MontserratAlternates-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/AnyConv.com__MontserratAlternates-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/AnyConv.com__MontserratAlternates-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/AnyConv.com__MontserratAlternates-Italic.woff2" as="font" type="font/woff2" crossorigin> -->
 
-    <link rel="stylesheet" href="000css/00_normalize.css">
-    <link rel="stylesheet" href="000css/01_root.css">
-    <link rel="stylesheet" href="000css/02_header.css">
-  
-    <link rel="stylesheet" href="001cssPg01/01_Price.css">
-    <link rel="stylesheet" href="001cssPg01/04_App.css">
-  
-    <link rel="stylesheet" href="000css/55_ContactsMap.css">
-    <link rel="stylesheet" href="000css/59_footer.css">
+  <title>Космодент | услуги/цены</title>
+
+  <link rel="stylesheet" href="000css/00_normalize.css">
+
+  <link rel="stylesheet" href="000css/01__root.css">
+  <link rel="stylesheet" href="000css/01_blocks.css">
+  <link rel="stylesheet" href="000css/02_header.css">
+
+  <link rel="stylesheet" href="001cssPg01/01_Price.css">
+  <link rel="stylesheet" href="001cssPg01/04_App.css">
+
+  <link rel="stylesheet" href="000css/55_ContactsMap.css">
+  <link rel="stylesheet" href="000css/59_footer.css">
 </head>
 <body>
 
-  <div class="bodyBlock">
+<div class="bodyBlock">
 
-    <header class="block sectionHeader">
-      <div class="container">
-        <div class="contentSecHeader">
-          <!-- <div class="w100blue"></div> -->
-          <p>sectionHeader contentSecHeader 1</p>
+  <header class="block sectionHeader">
+    <div class="container">
+      <div class="contentSecHeader header">
+
+        <div class="header__infoRow">
+          <a href="#"><span class="logo"></span></a>
+          <div class="header__infoBlock">
+            <div class="phoneInfo">
+              <div class="phoneInfo__Label">Единый номер</div>
+              <div class="phoneInfo__Number"><a href="tel:+74912272008">+7 (4912) 27-20-08</a></div>
+              <div class="phoneInfo__WorkTime">08:00- 21:00</div>
+            </div>
+            <div class="socials">
+              <div class="socials__item"><a class="socials__item_wk" href="#">wk</a></div>
+              <div class="socials__item"><a class="socials__item_ok" href="#">ok</a></div>
+              <div class="socials__item"><a class="socials__item_wa" href="#">wa</a></div>
+              <div class="socials__item"><a class="socials__item_tg" href="#">tg</a></div>
+            </div>
+            <div class="bluLinkButton header__infoBtnEnter">
+              <a class="lvl2" href="#">Запись на приём</a>
+              <a href="#">Запись на приём</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="header__navRow">
           <nav>
-            <p>sectionHeader contentSecHeader 2</p>
+            <ul class="navigation__list">
+              <li class="navigation__item"><a href="#">Главная<span class="navigation__itemArrow"></span></a></li>
+              <li class="navigation__item"><a href="#">О клинике<span class="navigation__itemArrow"></span></a></li>
+              <li class="navigation__item"><a href="#">Услуги<span class="navigation__itemArrow navigation__itemArrow_selected"></span></a></li>
+              <li class="navigation__item"><a href="#">Врачи<span class="navigation__itemArrow"></span></a></li>
+              <li class="navigation__item"><a href="#">Фото работ<span class="navigation__itemArrow"></span></a></li>
+              <li class="navigation__item"><a href="#">Статьи<span class="navigation__itemArrow"></span></a></li>
+              <li class="navigation__item"><a href="#">Отзывы<span class="navigation__itemArrow"></span></a></li>
+              <li class="navigation__item"><a href="#">Контакты<span class="navigation__itemArrow"></span></a></li>
+            </ul>
           </nav>
         </div>
+
+        <div class="blueLine100"></div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <main>
+  <main>
 
-      <section class="block sectionPrice">
-        <div class="container">
-          <div class="contentSecPrice">
-            <!-- <div class="w100blue"></div> -->
-            <p>sectionPrice contentSecPrice</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="block sectionApp">
-        <div class="container">
-          <div class="contentSecApp">
-            <!-- <div class="w100blue"></div> -->
-            <p>sectionApp contentSecApp</p>
-          </div>
-        </div>
-      </section>
-
-    </main>
-
-    <section class="block sectionContactsMap">
+    <section class="block sectionPrice">
       <div class="container">
-        <div class="contentSecContactMap">
-          <div class="contentSecContact">
-            <p>contentSecContact</p>
-          </div>
-
-          <div class="contentSecMap">
-            <img class="imgMap" src="./img/map.png" alt="">
-          </div>
+        <div class="contentSecPrice">
+          <!-- <div class="w100blue"></div> -->
+          <p>sectionPrice contentSecPrice</p>
         </div>
       </div>
     </section>
 
-    <footer class="block sectionFooter">
+    <section class="block sectionApp">
       <div class="container">
-        <div class="contentSecFooter">
-          <!-- <div class="w100red"></div> -->
-          <p>contentSecFooter</p>
+        <div class="contentSecApp">
+          <!-- <div class="w100blue"></div> -->
+          <p>sectionApp contentSecApp</p>
         </div>
       </div>
-    </footer>
+    </section>
 
-  </div>
+  </main>
+
+  <section class="block sectionContactsMap">
+    <div class="container">
+      <div class="contentSecContactMap">
+        <div class="contentSecContact">
+          <p>contentSecContact</p>
+        </div>
+
+        <div class="contentSecMap">
+          <img class="imgMap" src="./img/map.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="block sectionFooter">
+    <div class="container">
+      <div class="contentSecFooter">
+        <!-- <div class="w100red"></div> -->
+        <p>contentSecFooter</p>
+      </div>
+    </div>
+  </footer>
+
+</div>
 
 </body>
 </html>
