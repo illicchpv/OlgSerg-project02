@@ -1,3 +1,22 @@
+/* .blockTitle */
+.blockTitle {
+  /* margin-bottom: 82px; */
+  color: #000;
+  font-family: msaR;
+  font-size: 52px;
+  font-weight: 600;
+}
+
+.blockTitle__line {
+  display: inline-block;
+  width: 100px;
+  height: 8px;
+  background-color: #00A6E8;
+  border-radius: 0px 5px 5px 0px;
+  background: #004DC0;
+}
+/* /.blockTitle */
+
 // blueLine100
 .blueLine100 {
   //width: 100vw;
