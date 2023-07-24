@@ -1,11 +1,13 @@
 // blueLine100
 .blueLine100 {
-  width: 100vw;
+  //width: 100vw;
+  width: 100%;
   height: 1px;
   background-color: #00A6E8;
   position: absolute;
   bottom: 10px;
-  left: calc((100vw - 100%) / 2);
+  //left: calc((100vw - 100%) / 2);
+  left: 0;
 }
 // /blueLine100
 

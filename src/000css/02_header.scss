@@ -68,7 +68,7 @@
   top: 10px;
 }
 .phoneInfo:hover::before {
-  animation: "dzin" 0.1s infinite;
+  animation: dzin 0.1s infinite;
 }
 
 .phoneInfo__Label {
@@ -266,7 +266,7 @@
   }
 }
 
-@keyframes "dzin" {
+@keyframes dzin {
   0% {
     transform: rotate(0deg);
     transform: translateX(0);
