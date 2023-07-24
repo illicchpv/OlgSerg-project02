@@ -19,6 +19,8 @@
 
   <link rel="stylesheet" href="000css/01__root.css">
   <link rel="stylesheet" href="000css/01_blocks.css">
+  <link rel="stylesheet" href="000css/01_input.css">
+  <link rel="stylesheet" href="000css/01_select.css">
   <link rel="stylesheet" href="000css/02_header.css">
 
   <link rel="stylesheet" href="001cssPg01/01_Price.css">
@@ -210,11 +212,170 @@
       </div>
     </section>
 
-    <section class="block sectionApp" style="display: none">
+    <section class="block sectionApp">
       <div class="container">
-        <div class="contentSecApp">
-          <!-- <div class="w100blue"></div> -->
-          <p>sectionApp contentSecApp</p>
+        <div class="contentSecApp appointment">
+
+          <div class="appointment_form">
+            <div class="appointment__row">
+              <div class="appointment__formBlock">
+
+                <h1 class="blockTitle appointment__formTitle">Запись на прием <div class="blockTitle__line"></div>
+                </h1>
+
+                <div class="appointment__topInfoline">
+                  Запишитесь на консультацию или прием </div>
+                <div class="appointment__topInfoline2">
+                  по телефону <a class="ahover" href="tel:+74912272008">+7 (4912) 272-008</a> или заполните форму</div>
+  
+                <form action="">
+                  <!-- Ваше имя * -->
+                  <div class="inputField inputField_name appointment__formField ">
+                    <input id="inputName" class="inputFldBase inputFField" type="text" placeholder="Ваше имя *"
+                      onblur="onBlureEl(this, 'inputFField', 'appointment__formButton')" required data-required="1"
+                      autocomplete="off" minlength="3" maxlength="30">
+                  </div>
+                  <!-- Телефон * -->
+                  <div class="inputField inputField_phone appointment__formField">
+                    <input id="inputTel" class="inputFldBase inputFField" type="text"
+                      placeholder="Телефон *      ### ### ####"
+                      onblur="onBlureEl(this, 'inputFField', 'appointment__formButton')" required data-required="1"
+                      autocomplete="off" pattern="[\d]{3} [\d]{3} [\d]{4}">
+                    <script>
+                      document.getElementById('inputTel').addEventListener('input', function (e) {
+                        let x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+                        e.target.value = !x[2] ? x[1] : '' + x[1] + ' ' + x[2] + (x[3] ? ' ' + x[3] : '');
+                      });
+                    </script>
+                  </div>
+                  <!-- Почта -->
+                  <div class="inputField inputField_mail appointment__formField">
+                    <input id="inputEmail" class="inputFldBase inputFField" type="email" placeholder="Почта"
+                      onblur="onBlureEl(this, 'inputFField', 'appointment__formButton')" autocomplete="off"
+                      pattern="^[^ ]+@[^ ]+\.[a-z]{2,6}$" maxlength="30">
+                  </div>
+                  <!--Выберите услугу  -->
+                  <div class="comunication__dropLine">
+                    <!-- с использованием: https://codepen.io/robsonklein23/pen/jOYyKVV?editors=1100 -->
+                    <label class="drop">
+                      <input type="checkbox" class="inputFField" id="selectId" value="" data-customrequired="1">
+                      <!-- Toggle Drop -->
+                      <span class="drop__control" id="dropTarget">Выберите услугу</span> <!-- Fake button -->
+                      <script>
+                        function dropSelect(el, placeholder, speak) {
+                          let items = el.parentElement.parentElement.querySelectorAll('.drop__item');
+                          items.forEach(element => { element.classList.remove("itemSelected"); });
+                          el.parentElement.classList.add('itemSelected');
+                          document.getElementById('dropTarget').innerText = el.innerText;
+                          document.getElementById('selectId').value = speak;
+                          try {
+                            onBlureEl(false, 'inputFField', 'appointment__formButton')
+                          } catch (e) { console.error('Error in dropSelect -- ', e) }
+                          if (speak)
+                            speakText(speak)
+                          // try{
+                          //   document.getElementById('cPhoneMail').placeholder = placeholder;
+                          //   document.getElementById('cPhoneMail').focus();
+                          // }catch(e){console.error("cPhoneMail", e)}
+                        }
+                        function loadVoices() {
+                          var voices = speechSynthesis.getVoices();
+                          console.log("voices:", voices)
+                        }
+                        function speakPH(el) {
+                          let placeholder = el.getAttribute("placeholder")
+                          if (!placeholder)
+                            return;
+                          speakText(placeholder);
+                        }
+                        function speakText(txt) {
+                          try {
+                            let speech = new window.SpeechSynthesisUtterance(); speech.text = txt;
+                            window.speechSynthesis.speak(speech);
+                          } catch (e) { console.error("speakText", e) }
+                        }
+                      </script>
+                      <!-- Items -->
+                      <ul class="drop__items">
+                        <li class="drop__item"><a href="javascript:void(0)"
+                            onclick="dropSelect(this, 'Консультация стоматолога', 'записаться на консультацию стоматолога')"><label
+                              for="selectId">Консультация стоматолога</label></a></li>
+                        <li class="drop__item"><a href="javascript:void(0)"
+                            onclick="dropSelect(this, 'Терапия', 'записаться на терапию')"><label
+                              for="selectId">Терапия</label></a></li>
+                        <li class="drop__item"><a href="javascript:void(0)"
+                            onclick="dropSelect(this, 'Удаление зубов', 'записаться на Удаление зубов')"><label
+                              for="selectId">Удаление зубов</label></a></li>
+                        <li class="drop__item"><a href="javascript:void(0)"
+                            onclick="dropSelect(this, 'Имплантация', 'записаться на Имплантацию')"><label
+                              for="selectId">Имплантация</label></a></li>
+                        <li class="drop__item"><a href="javascript:void(0)"
+                            onclick="dropSelect(this, 'ВИНИРЫ', 'записаться на установку виниров')"><label
+                              for="selectId">ВИНИРЫ</label></a></li>
+                      </ul>
+                      <!-- Alternative to close dropdown with click out -->
+                      <label for="selectId" class="drop__closeOverlay"></label>
+                    </label>
+                  </div>
+
+                  <div class="bluLinkButton appointment__formButton" style="display: none;">
+                    <a class="lvl2" href="#" onclick="sendForm(event)">Отправить</a>
+                    <a href="#" onclick="sendForm(event)">Отправить</a>
+                  </div>
+                  <div class="bluLinkButton appointment__formButton disabled" style="display: inline-block;"><a
+                    href="#" onclick="sendForm(event)">Отправить</a></div>
+
+                </form>
+                <!-- script onBlureEl sendForm -->
+                <script>
+                  function onBlureEl(el, fieldsClass, btnClass) {
+                    console.log('onBlureEl', el)
+                    if (el)
+                      el.classList.add('visitedI') //el.classList.contains('visitedI') ? el.classList.remove('visitedI') : el.classList.add('visitedI')
+                    const fields = document.querySelectorAll("." + fieldsClass);
+                    let valid = true
+                    for (const fld of fields) {
+                      if (fld.getAttribute('data-customrequired')) {
+                        if (!fld.value) {
+                          console.log('customrequired', 'invalid!', fld.id)
+                          valid = false
+                          break
+                        }
+                      } else {
+                        if (typeof (fld.attributes.required) === 'object') {
+                          if (fld.checkValidity && !fld.checkValidity()) {
+                            console.log(fld.attributes.required, 'invalid!', fld.id)
+                            valid = false
+                            break
+                          }
+                        }
+                      }
+                    }
+                    let buttons = document.querySelectorAll("." + btnClass);
+                    for (const button of buttons) {
+                      if (button.classList.contains('disabled')) {
+                        button.style.display = valid ? "none" : "inline-block";
+                      } else {
+                        button.style.display = valid ? "inline-block" : "none";
+                      }
+                    }
+                    return valid
+                  }
+                  function sendForm(e) {
+                    e.preventDefault()
+                    if (e.srcElement.classList.contains('disabled') || e.srcElement.parentElement.classList.contains('disabled'))
+                      return
+                    alert('Отправляем данные пользователя на сервер.')
+                  }
+                </script>
+              </div>
+
+              <div class="appointment__photoBlock">
+                <img class="appointment__frontman" src="./img/frontman.png" alt="frontman">
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>

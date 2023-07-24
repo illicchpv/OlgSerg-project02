@@ -1,3 +1,4 @@
+
 @font-face {
   /* sans-serif  Regular */
   font-family: 'msaR';
@@ -64,7 +65,7 @@ body {
   line-height: 1.1;
   min-width: 320px;
   min-height: 100vh;
-  //overflow-x: hidden;
+  overflow-x: hidden;
   background-color: var(--bgColor1);
   color: var(--txtColor);
 }

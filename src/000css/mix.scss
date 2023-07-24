@@ -1,0 +1,13 @@
+$propGlob: 0;
+@mixin vVal($prop, $size1, $size2, $val1, $val2){
+  $k: calc(($val1 - $val2) / ($size1 - $size2));
+  $v: calc($val1 - (($size1 - 100vw) * $k));
+  $propGlob: $v !global;
+  #{$prop}: $v;
+}
+// use sample: на разрешении 768px размер фонта 76px на разрешении 360px размер фонта 3.6px
+// .test{
+//   @include vVal(font-size, 768px, 360px, 76px, 3.6px);
+//   text-align: center;
+// }
+

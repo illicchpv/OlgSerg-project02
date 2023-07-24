@@ -1,0 +1,122 @@
+.comunication__dropLine {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.drop {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+.drop input[type=checkbox] {
+  display: none;
+}
+.drop input[type=checkbox]:checked ~ .drop__items {
+  opacity: 1;
+  max-height: 400px;
+  margin-top: -20px;
+  z-index: 20;
+  padding-top: 30px;
+}
+.drop input[type=checkbox]:checked ~ .drop__control {
+  z-index: 99;
+}
+.drop input[type=checkbox]:checked ~ .drop__control:after {
+  transform: rotate(180deg);
+}
+.drop input[type=checkbox]:checked ~ .drop__closeOverlay {
+  transform: none;
+  pointer-events: initial;
+}
+.drop .drop__control {
+  position: relative;
+  color: #959595;
+  font-size: 18px;
+  display: block;
+  cursor: pointer;
+  padding: 17px 0;
+  padding-left: 64px;
+  background: white;
+  transition: all var(--transTime) ease;
+  box-sizing: border-box;
+  border-radius: 15px;
+  border: 1px solid #D9D9D9;
+}
+.drop .drop__control::before {
+  content: "";
+  position: absolute;
+  left: 22px;
+  top: 30%;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/input/select.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.drop .drop__control:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 15px;
+  height: 8px;
+  background-image: url(../img/ArrowDn.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: transform var(--transTime) ease;
+  right: 10px;
+  top: 45%;
+}
+.drop .drop__items {
+  position: absolute;
+  top: calc(100% + 0rem);
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  transition: all var(--transTime) ease;
+  background: white;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  z-index: 99;
+  border: 1px solid #D9D9D9;
+  border-radius: 15px;
+}
+.drop .drop__items .drop__item {
+  list-style: none;
+}
+.drop .drop__items .drop__item a {
+  display: block;
+  color: darkgrey;
+  padding: 0.6rem;
+  padding-left: 20px;
+  transition: all var(--transTime) ease;
+}
+@media (hover: hover) {
+  .drop .drop__items .drop__item a:hover {
+    color: black;
+  }
+}
+.drop .drop__items .drop__item label {
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+}
+.drop .drop__closeOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 9;
+  transform: translate(100%, 0);
+  pointer-events: none;
+}
+
+.drop .drop__items li.itemSelected a {
+  color: black;
+}
+
+.test {
+  font-size: calc(76px - (768px - 100vw) * 0.1774509804);
+  text-align: center;
+}/*# sourceMappingURL=01_select.css.map */
