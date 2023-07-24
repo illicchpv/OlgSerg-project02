@@ -26,6 +26,8 @@
 
   <link rel="stylesheet" href="000css/55_ContactsMap.css">
   <link rel="stylesheet" href="000css/59_footer.css">
+
+  <script src="./js/page01.js" defer></script>
 </head>
 <body>
 
@@ -44,6 +46,7 @@
               <div class="phoneInfo__WorkTime">08:00- 21:00</div>
             </div>
             <div class="socials">
+              <div class="socials__item"><a class="socials__item_phone"  href="tel:+74912272008">phone</a></div>
               <div class="socials__item"><a class="socials__item_wk" href="#">wk</a></div>
               <div class="socials__item"><a class="socials__item_ok" href="#">ok</a></div>
               <div class="socials__item"><a class="socials__item_wa" href="#">wa</a></div>
@@ -52,6 +55,34 @@
             <div class="bluLinkButton header__infoBtnEnter">
               <a class="lvl2" href="#">Запись на приём</a>
               <a href="#">Запись на приём</a>
+            </div>
+
+            <div class="burgerMenu">
+              <a class="burgerMenu__btn" href="#" onclick="burgerMenuToggle(event)"><img class="burgerMenu__img" src="./img/burger_menu.svg" alt="" srcset=""></a>
+              <div class="burgerMenu__drop">
+                <ul class="navigation__list navigation__list_colHdh">
+                  <li class="navigation__item"><a href="#" onclick="burgerMenuToggle(event)">Главная</a></li>
+                  <li class="navigation__item"><a href="#" onclick="burgerMenuToggle(event)">О клинике</a></li>
+                  <li class="navigation__item"><a href="#" onclick="burgerMenuToggle(event)">Услуги</a></li>
+                  <li class="navigation__item"><a href="#" onclick="burgerMenuToggle(event)">Врачи</a></li>
+                  <li class="navigation__item"><a href="#" onclick="burgerMenuToggle(event)">Фото работ</a></li>
+                  <li class="navigation__item"><a href="#" onclick="burgerMenuToggle(event)">Статьи</a></li>
+                  <li class="navigation__item"><a href="#" onclick="burgerMenuToggle(event)">Отзывы</a></li>
+                  <li class="navigation__item"><a href="#" onclick="burgerMenuToggle(event)">Контакты</a></li>
+                  <li><hr></li>
+                  <li class="navigation__item"><a href="#" onclick="burgerMenuToggle(event)">запись на приём</a></li>
+                  <li class="navigation__item"><a href="tel:+74912272008" onclick="burgerMenuToggle(event)"><img src="./img/tel_trubka.svg" alt="">&nbsp;&nbsp;единый номер</a></li>
+                  <li class="navigation__item">
+                    <div class="socials" style="">
+<!--                      <div class="socials__item"><a class="socials__item_phone"  href="tel:+74912272008">phone</a></div>-->
+                      <div class="socials__item"><a class="socials__item_wk" href="#" data-cc="wk"></a></div>
+                      <div class="socials__item"><a class="socials__item_ok" href="#" data-cc="ok"></a></div>
+                      <div class="socials__item"><a class="socials__item_wa" href="#" data-cc="wa"></a></div>
+                      <div class="socials__item"><a class="socials__item_tg" href="#" data-cc="tg"></a></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -87,7 +118,7 @@
       </div>
     </section>
 
-    <section class="block sectionApp">
+    <section class="block sectionApp" style="display: none">
       <div class="container">
         <div class="contentSecApp">
           <!-- <div class="w100blue"></div> -->
@@ -98,7 +129,7 @@
 
   </main>
 
-  <section class="block sectionContactsMap">
+  <section class="block sectionContactsMap" style="display: none">
     <div class="container">
       <div class="contentSecContactMap">
         <div class="contentSecContact">
@@ -112,7 +143,7 @@
     </div>
   </section>
 
-  <footer class="block sectionFooter">
+  <footer class="block sectionFooter" style="display: none">
     <div class="container">
       <div class="contentSecFooter">
         <!-- <div class="w100red"></div> -->

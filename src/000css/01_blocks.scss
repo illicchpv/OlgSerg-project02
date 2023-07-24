@@ -18,13 +18,29 @@
 }
 
 .socials__item a {
-  display: inline-block;
+  //display: inline-block;
   background-repeat: no-repeat;
   background-size: cover;
   color: transparent;
   width: 43px;
   height: 43px;
   /* transition: all var(--transTime); */
+}
+
+.socials__item_phone{
+  display: none;
+  width: 43px; height: 43px;
+  background-image: url(../img/social_phone.png);
+  transition: background-image var(--transTime);
+}
+.socials__item_phone:hover {
+  background-image: url(../img/social_phone1.png);
+}
+.navigation__item .socials{
+  display: flex;
+}
+.navigation__item .socials__item_phone{
+  display: flex;
 }
 
 .socials__item_wk {
@@ -73,10 +89,10 @@
 
   border-radius: 35px;
   background: linear-gradient(180deg, #00A0E3 0%, #004DC0 100%);
-  box-shadow: 0px 10px 20px 0px rgba(0, 160, 227, 0.30);
+  box-shadow: 0 10px 20px 0 rgba(0, 160, 227, 0.30);
 
   color: #FFF;
-  font-family: msaR;
+  font-family: msaR sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -100,9 +116,15 @@
 
 .bluLinkButton.disabled a {
   background: linear-gradient(180deg, #a6b7bf 0%, #424549 100%);
-  box-shadow: 0px 10px 20px 0px rgba(0, 160, 227, 0.30);
+  box-shadow: 0 10px 20px 0 rgba(0, 160, 227, 0.30);
 
   color: #cacaca;
   cursor: not-allowed;
 }
 /* /.bluLinkButton */
+
+@media (max-width: 1240px) {
+  .header__infoBlock .socials__item_phone{
+    display: inline-block;
+  }
+}

@@ -33,6 +33,7 @@
 :root {
   --transTime: 0.3s;
   --txtColor: #000;
+  --txtHdrColor: #004DC0;
   --bgColor1: #ECF7FF;
   --bgColor2: #BDE2FE;
   --bgColor3: #9ED5FE;
@@ -43,6 +44,7 @@
   --contentInnerPadX: 4px;
 }
 /* var(--transTime) var(--bgColor1)
+
 var(--bgColor2) var(--bgColor3) 
 var(--bgColor9) var(--bgMap)   
 var(--bodyBlockW) var(--containerW) var(--contentInnerPadX)
@@ -62,7 +64,7 @@ body {
   line-height: 1.1;
   min-width: 320px;
   min-height: 100vh;
-  overflow-x: hidden;
+  //overflow-x: hidden;
   background-color: var(--bgColor1);
   color: var(--txtColor);
 }
@@ -76,6 +78,7 @@ button {
   border: 0;
 }
 a {
+  display: inline-block;
   text-decoration: none;
   color: inherit;
 }
@@ -95,7 +98,6 @@ h1, h2, h3, p, fieldset {
 }
 .container {
   margin: 0 auto;
-  max-width: 1000px;
   max-width: var(--containerW);
   min-height: 10vh;
   height: 100%;
