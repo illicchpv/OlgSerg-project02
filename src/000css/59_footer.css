@@ -1,0 +1,17 @@
+.sectionFooter {
+  margin-top: -150px;
+  background-image: url(../imgBg/10footer.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.contentSecFooter {
+  height: 100%;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 var(--contentInnerPadX);
+}/*# sourceMappingURL=59_footer.css.map */

@@ -6,9 +6,6 @@
 /.idea
 /.vscode
 /node_modules
-/src/*css*/*.css
-/src/*css*/*.map
-
 
 # testing
 #   /coverage
