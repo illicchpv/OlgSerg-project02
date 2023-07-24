@@ -18,7 +18,8 @@
   https://github.com/illicchpv/OlgSerg-project01
 
 public URL нашего проекта
-  https://illicchpv.github.io/OlgSerg-project01/pg01.html
+  https://illicchpv.github.io/OlgSerg-project02/src/page01.html
+  // https://illicchpv.github.io/OlgSerg-project01/pg01.html
 
 сайт образец от заказчика
   https://kosmodent62.ru/previews
