@@ -51,7 +51,7 @@
 
 <div class="bodyBlock">
 
-  <header class="block sectionHeader">
+  <header class="block sectionHeader" style="display: -none;">
     <div class="container">
       <div class="contentSecHeader header">
 
@@ -127,7 +127,7 @@
 
   <main>
 
-    <section class="block sectionPrice">
+    <section class="block sectionPrice" style="display: -none;">
       <div class="container">
         <div class="contentSecPrice service">
 
@@ -320,7 +320,6 @@
                   </div>
                   <div class="bluLinkButton appointment__formButton disabled" style="display: inline-block;"><a
                     href="#" onclick="sendForm(event)">Отправить</a></div>
-
                 </form>
                 <!-- script onBlureEl sendForm -->
                 <script>
@@ -379,15 +378,69 @@
 
   </main>
 
-  <section class="block sectionContactsMap" style="display: none">
+  <section class="block sectionContactsMap" style="display: -none">
     <div class="container">
-      <div class="contentSecContactMap">
+      <div class="contentSecContactMap contacts">
         <div class="contentSecContact">
-          <p>contentSecContact</p>
+
+          <div class="contacts__form">
+
+            <div class="contacts__formBox">
+              <h1 class="blockTitle">Наши <wbr> контакты&nbsp;<span class="blockTitle__line"></span>
+              </h1>
+
+              <div class="phoneInfo do940 contacts__form_phoneInfo">
+                <div class="phoneInfo__Label">Единый номер</div>
+                <div class="phoneInfo__Number"><a href="tel:+74912272008">+7 (4912) 27-20-08</a></div>
+                <div class="phoneInfo__WorkTime">08:00- 21:00</div>
+              </div>
+
+              <div class="socials do940 contacts__form_socials">
+                <div class="socials__item"><a class="socials__item_wk" href="#">wk</a></div>
+                <div class="socials__item"><a class="socials__item_ok" href="#">ok</a></div>
+                <div class="socials__item"><a class="socials__item_wa" href="#">wa</a></div>
+                <div class="socials__item"><a class="socials__item_tg" href="#">tg</a></div>
+              </div>
+
+              <div class="contacts__info2">
+                <div class="phoneInfo contacts__form_phoneInfo">
+                  <div class="phoneInfo__Label">Единый номер</div>
+                  <div class="phoneInfo__Number"><a href="tel:+74912272008">+7 (4912) 27-20-08</a></div>
+                  <div class="phoneInfo__WorkTime">08:00- 21:00</div>
+                </div>
+
+                <div class="socials contacts__form_socials">
+                  <div class="socials__item"><a class="socials__item_wk" href="#">wk</a></div>
+                  <div class="socials__item"><a class="socials__item_ok" href="#">ok</a></div>
+                  <div class="socials__item"><a class="socials__item_wa" href="#">wa</a></div>
+                  <div class="socials__item"><a class="socials__item_tg" href="#">tg</a></div>
+                </div>
+
+                <div class="bluLinkButton">
+                  <a class="lvl2" href="#">Запись на приём</a>
+                  <a href="#">Запись на приём</a>
+                </div>
+              </div>
+
+              <!-- <div class="bluLinkButton  contacts__form_bluButton"><a href="#">Запись на приём</a></div> -->
+              <div class="bluLinkButton do940">
+                <a class="lvl2" href="#">Запись на приём</a>
+                <a href="#">Запись на приём</a>
+              </div>
+
+            </div>
+
+          </div>
+
         </div>
 
         <div class="contentSecMap">
-          <img class="imgMap" src="./img/map.png" alt="">
+<!--          <img class="imgMap" src="./img/map.png" alt="">-->
+          <div class="contactsMap">
+            <div class="contactsMap__pin contactsMap__pin_1"><a href="#"></a></div>
+            <div class="contactsMap__pin contactsMap__pin_2"><a href="#"></a></div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -402,6 +455,7 @@
     </div>
   </footer>
 
+  <div style="height: 300px"></div>
 </div>
 
 </body>

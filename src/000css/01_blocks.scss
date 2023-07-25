@@ -207,8 +207,11 @@
 }
 
 @media (max-width: 600px){
-  .blockTitle__line{ 
-    @include vVal(width, 600px, 320px, 100px, 60px);
+  .blockTitle{
+    @include vVal(font-size, 600px, 320px, 48px, 23px);
+  }
+  .blockTitle__line{
+    @include vVal(width, 600px, 320px, 100px, 54px);
   }
 }
 

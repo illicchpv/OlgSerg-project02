@@ -199,7 +199,7 @@
 }
 
 @media (max-width: 1240px) {
-  .phoneInfo {
+  .header__infoBlock .phoneInfo {
     display: none;
   }
   //.socials__item {
@@ -216,7 +216,7 @@
   .header__infoBlock {
     justify-content: end;
   }
-  .socials {
+  .header__infoBlock > .socials {
     display: none;
   }
   .header__infoBtnEnter {
