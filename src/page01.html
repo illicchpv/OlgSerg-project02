@@ -8,10 +8,25 @@
 
   <link rel="icon" type="image/x-icon" href="./img/favicon/favicon.ico">
 
-  <!-- <link rel="preload" href="fonts/AnyConv.com__MontserratAlternates-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <!--
+  <link rel="preload" href="fonts/AnyConv.com__MontserratAlternates-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/AnyConv.com__MontserratAlternates-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/AnyConv.com__MontserratAlternates-Bold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/AnyConv.com__MontserratAlternates-Italic.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link rel="preload" href="fonts/AnyConv.com__MontserratAlternates-Italic.woff2" as="font" type="font/woff2" crossorigin>
+  -->
+
+  <link rel="prefetch" href="fonts/AnyConv.com__MontserratAlternates-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="prefetch" href="fonts/AnyConv.com__MontserratAlternates-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="prefetch" href="fonts/AnyConv.com__MontserratAlternates-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="prefetch" href="fonts/AnyConv.com__MontserratAlternates-Italic.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="prefetch" href="img/map.png" as=image />
+  <link rel="prefetch" href="img/frontman.png" as=image />
+  <link rel="prefetch" href="img/deletionTooth.png" as=image />
+  <link rel="prefetch" href="img/logotype.png" as=image />
+  <link rel="prefetch" href="img/social_phone.png" as=image />
+  <link rel="prefetch" href="img/tel_trubka.svg" as=image />
+  <link rel="prefetch" href="img/timer.svg" as=image />
 
   <title>Космодент | услуги/цены</title>
 
@@ -29,6 +44,7 @@
   <link rel="stylesheet" href="000css/55_ContactsMap.css">
   <link rel="stylesheet" href="000css/59_footer.css">
 
+  <script src="./js/common.js" defer></script>
   <script src="./js/page01.js" defer></script>
 </head>
 <body>
@@ -115,7 +131,7 @@
       <div class="container">
         <div class="contentSecPrice service">
 
-          <h1 class="serviceListTitle blockTitle">Цены <div class="blockTitle__line"></div>
+          <h1 class="serviceListTitle blockTitle">Цены <span class="blockTitle__line"></span>
           </h1>
   
           <article><!-- консультация -->
@@ -220,7 +236,7 @@
             <div class="appointment__row">
               <div class="appointment__formBlock">
 
-                <h1 class="blockTitle appointment__formTitle">Запись на прием <div class="blockTitle__line"></div>
+                <h1 class="blockTitle appointment__formTitle">Запись на прием <span class="blockTitle__line"></span>
                 </h1>
 
                 <div class="appointment__topInfoline">
@@ -273,26 +289,6 @@
                           } catch (e) { console.error('Error in dropSelect -- ', e) }
                           if (speak)
                             speakText(speak)
-                          // try{
-                          //   document.getElementById('cPhoneMail').placeholder = placeholder;
-                          //   document.getElementById('cPhoneMail').focus();
-                          // }catch(e){console.error("cPhoneMail", e)}
-                        }
-                        function loadVoices() {
-                          var voices = speechSynthesis.getVoices();
-                          console.log("voices:", voices)
-                        }
-                        function speakPH(el) {
-                          let placeholder = el.getAttribute("placeholder")
-                          if (!placeholder)
-                            return;
-                          speakText(placeholder);
-                        }
-                        function speakText(txt) {
-                          try {
-                            let speech = new window.SpeechSynthesisUtterance(); speech.text = txt;
-                            window.speechSynthesis.speak(speech);
-                          } catch (e) { console.error("speakText", e) }
                         }
                       </script>
                       <!-- Items -->
@@ -363,7 +359,8 @@
                   }
                   function sendForm(e) {
                     e.preventDefault()
-                    if (e.srcElement.classList.contains('disabled') || e.srcElement.parentElement.classList.contains('disabled'))
+                    // if (e.srcElement.classList.contains('disabled') || e.srcElement.parentElement.classList.contains('disabled'))
+                    if (e.target.classList.contains('disabled') || e.target.parentElement.classList.contains('disabled'))
                       return
                     alert('Отправляем данные пользователя на сервер.')
                   }
