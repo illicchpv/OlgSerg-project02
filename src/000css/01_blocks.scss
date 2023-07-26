@@ -58,7 +58,7 @@
 .blockTitle {
   /* margin-bottom: 82px; */
   color: #000;
-  font-family: msaR;
+  font-family: msaR, sans-serif;
   font-size: 52px;
   font-weight: 600;
   position: relative;
@@ -68,9 +68,9 @@
   display: inline-block;
   width: 100px;
   height: 8px;
-  background-color: #00A6E8;
-  border-radius: 0px 5px 5px 0px;
-  background: #004DC0;
+  //background-color: #00A6E8;
+  border-radius: 0 5px 5px 0;
+  background-color: #004DC0;
 }
 
 @media (max-width: 1300px) {
