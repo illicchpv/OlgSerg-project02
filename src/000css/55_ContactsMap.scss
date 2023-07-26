@@ -99,18 +99,18 @@
   width: 100%; height: 100%;
 }
 .contactsMap__pin_1{
-  left: 60%; top: 30%;
+  left: 217px; top: 30%;
 }
 .contactsMap__pin_2{
-  left: 40%; top: 10%;
+  left: 50px; top: 10%;
 }
 .contacts__info2{
   display: none;
 }
 @media (max-width: 1300px){
-  .contacts__formBox .blockTitle__line {
-    display: none;
-  }
+  //.contacts__formBox .blockTitle__line {
+  //  display: none;
+  //}
 }
 //@media (max-width: 1240px)
 @media (max-width: 940px){
@@ -123,9 +123,9 @@
   //.contacts__formBox .blockTitle__line {
   //  display: inline-block;
   //}
-  .blockTitle__line{
-    display: none;
-  }
+  //.blockTitle__line{
+  //  display: none;
+  //}
   .do940{
     display: none;
   }
