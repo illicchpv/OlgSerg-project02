@@ -2,8 +2,8 @@
 
 .sectionContactsMap{
   margin-top: -150px;
-  min-height: 500px;
-  height: 749px;
+  //min-height: 500px;
+  height: 740px;
 
   // background-color: chocolate;
 }
@@ -151,14 +151,24 @@
     flex-basis: 90%;
   }
 
+  //.contentSecMap {
+  //  min-height: 300px;
+  //  /* width: calc(100% + min(100vw,var(--bodyBlockW))/2 - 100%); */
+  //  //width: 100%;
+  //  width: calc(100vw - var(--contentInnerPadX)*2);
+  //  height: calc(100vw - var(--contentInnerPadX)*2);
+  //  //margin-left: var(--contentInnerPadX);
+  //}
   .contentSecMap {
     min-height: 300px;
     /* width: calc(100% + min(100vw,var(--bodyBlockW))/2 - 100%); */
     //width: 100%;
     width: calc(100vw - var(--contentInnerPadX)*2);
-    height: calc(100vw - var(--contentInnerPadX)*2);
+    //height: calc(100vw - var(--contentInnerPadX)*2);
     //margin-left: var(--contentInnerPadX);
+    height: 570px;
   }
+
 
   //.sectionContactsMap {
   //  height: auto;

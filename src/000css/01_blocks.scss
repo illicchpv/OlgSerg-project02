@@ -1,5 +1,10 @@
 @import "../000css/mix";
 
+/* .ahoverU для hover на ссылках  */
+.ahoverU{color: #004DC0; transition: color var(--transTime);}
+.ahoverU:hover{color: #00A0E3;}
+/* /.ahover */
+
 /* .inputField */
 .inputField {
   position: relative;
