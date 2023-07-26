@@ -252,6 +252,7 @@
                     <input id="inputName" class="inputFldBase inputFField" type="text" placeholder="Ваше имя *"
                       onblur="onBlureEl(this, 'inputFField', 'appointment__formButton')" required data-required="1"
                       autocomplete="off" minlength="3" maxlength="30">
+                    <label for="inputName"></label>
                   </div>
                   <!-- Телефон * -->
                   <div class="inputField inputField_phone appointment__formField">
@@ -259,6 +260,7 @@
                       placeholder="Телефон *      ### ### ####"
                       onblur="onBlureEl(this, 'inputFField', 'appointment__formButton')" required data-required="1"
                       autocomplete="off" pattern="[\d]{3} [\d]{3} [\d]{4}">
+                    <label for="inputTel"></label>
                     <script>
                       document.getElementById('inputTel').addEventListener('input', function (e) {
                         let x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
@@ -271,6 +273,7 @@
                     <input id="inputEmail" class="inputFldBase inputFField" type="email" placeholder="Почта"
                       onblur="onBlureEl(this, 'inputFField', 'appointment__formButton')" autocomplete="off"
                       pattern="^[^ ]+@[^ ]+\.[a-z]{2,6}$" maxlength="30">
+                    <label for="inputEmail"></label>
                   </div>
                   <!--Выберите услугу  -->
                   <div class="comunication__dropLine">
