@@ -9,13 +9,13 @@ FL заявка:
   https://www.figma.com/file/ledIhCOlDdtqnC807knCXS/Cosmodent%7CPrice?type=design&node-id=0-1&mode=design&t=YVcQK4HKI276aWe1-0
   просмотр (владелец всёравно может редактировать):
     https://www.figma.com/file/ledIhCOlDdtqnC807knCXS/Cosmodent%7CPrice?type=design&node-id=0%3A1&mode=dev
-  редактирование для владельца:
+  редактирование для владельца:com
     https://www.figma.com/file/ledIhCOlDdtqnC807knCXS/Cosmodent%7CPrice?type=design&mode=design&t=NcKzRJIO1X1VCoGR-0
   устаревшая:  
     // https://www.figma.com/file/3QzyLidrLL1NiphdR6YdFU/Untitled?type=design&node-id=0-1&mode=design&t=ObYOK6naWj0bXQVc-0
 
 проект на github
-  https://github.com/illicchpv/OlgSerg-project01
+  https://github.com/illicchpv/OlgSerg-project02
 
 public URL нашего проекта
   https://illicchpv.github.io/OlgSerg-project02/src/page01.html
